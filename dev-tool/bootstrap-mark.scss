@@ -1,0 +1,19 @@
+// depende de Boostrap
+
+$dev-state: true;
+$dev-state: false;
+
+@if $dev-state == true {
+
+		// Mark grid boostrap
+	 	.container {
+	 		outline: 1px dashed #36D900 ;
+	 		.row {
+	 			border: 1px solid #FF5C26;
+	 			[class^="col-"] {
+	 				border: 1px solid #0080FF;
+	 			}
+	 		}
+	 	}
+
+}

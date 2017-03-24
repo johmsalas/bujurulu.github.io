@@ -1,0 +1,78 @@
+body {
+  font-family: Oxygen;
+  font-weight: 100;
+}
+.banderas {
+  background-color: #db0029;
+  padding: 1rem 0;
+}
+.banderas .item-container {
+  display: flex;
+  justify-content: space-between;
+}
+.banderas .item-container .item {
+  rr: tt;
+}
+.banderas .item-container .item a {
+  color: #fff;
+}
+.hero {
+  background-color: #f0eee2;
+}
+.hero .contenido {
+  margin: 0 auto;
+  max-width: 500px;
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.hero .contenido p {
+  font-size: 2rem;
+}
+.subscribete {
+  background: url("") no-repeat #47738c;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  min-height: 200px;
+  text-align: center;
+}
+.subscribete h2 {
+  font-weight: 900;
+  color: #fff;
+}
+.subscribete p {
+  color: #fff;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.footer {
+  background: url("") no-repeat #e0e0e0;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  min-height: 200px;
+}
+.footer img {
+  max-width: 100%;
+}
+.cognito .c-forms-form {
+  background-color: transparent !important;
+  margin: 0 auto !important;
+}
+.c-forms-form-body {
+  max-width: 500px;
+  margin: 0 auto !important;
+}
+.c-forms-form-body .c-editor input {
+  width: 100% !important;
+}
+.c-forms-form-body .c-email {
+  width: 100% !important;
+}
+.c-action {
+  width: 100% !important;
+}
+form + div {
+  height: 0px !important;
+  max-height: !important;
+  overflow: hidden !important;
+}
