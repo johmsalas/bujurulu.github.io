@@ -3,7 +3,7 @@ body {
   font-weight: 100;
 }
 .banderas {
-  background: url(../img/4370608.png) repeat 0 0 #db0029;
+  background: url('../img/4370608.png') repeat 0 0 #db0029;
   padding: 1rem 0;
 }
 .banderas .item-container {
