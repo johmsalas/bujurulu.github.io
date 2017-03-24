@@ -3,7 +3,7 @@ body {
   font-weight: 100;
 }
 .banderas {
-  background-color: #db0029;
+  background: url("../img/4370608.png") repeat 0 0 #db0029;
   padding: 1rem 0;
 }
 .banderas .item-container {
@@ -30,7 +30,7 @@ body {
   font-size: 2rem;
 }
 .subscribete {
-  background: url("") no-repeat #47738c;
+  background: url("../img/4370608.png") repeat 0 0 #47738c;
   padding-top: 3rem;
   padding-bottom: 3rem;
   min-height: 200px;
