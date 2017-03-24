@@ -21,9 +21,9 @@
 					'subscribe_content': '言語の力を発見して、魔法をささやいてください',
 				},
 				'#portuguese': {
-					'invitation': '',
-					'subscribe': '',
-					'subscribe_content': '',
+					'invitation': 'Un jogo de vídeo que transforma a magia em sussurros',
+					'subscribe': '¡Inscreva-se!',
+					'subscribe_content': 'E descubra o poder da palavra e murmure a magia',
 				},
 				'#english': {
 					'invitation': 'A video game that teaches you the magic of whispers in French',
@@ -60,13 +60,23 @@
 					'subscribe': '',
 					'subscribe_content': '',
 				},
+				'#russian': {
+					'invitation': 'Видеоигры, которые научат вас магии шёпотов на французском языке',
+					'subscribe': 'Подписывайся',
+					'subscribe_content': 'Обнаруж силу слов и прошепчи волшебство',
+				},
+				'#greek': {
+					'invitation': 'Ένα βίντεο παιχνίδι που διδάσκει τη μαγεία του ψιθυρίσματος στην γαλλική γλώσσα',
+					'subscribe': 'Εγγραφείτε',
+					'subscribe_content': 'Ανακαλύψτε τη δύναμη των λέξεων και ψιθυρίστε τη μαγεία',
+				},
 			};
 			function useLanguage(lang) {
 				if ( typeof translation[lang] != "undefined" ) {
 					document.getElementById("invitation").innerHTML = translation[lang].invitation;
 					document.getElementById("subscribe").innerHTML = translation[lang].subscribe;
 					document.getElementById("subscribe_content").innerHTML = translation[lang].subscribe_content;
-				}				
+				}
 			}
 		</script>
 
@@ -80,13 +90,15 @@
 			<div class="item-container">
 				<div class="item"><span class="flag flag-co"><a href="#spanish" onClick="useLanguage('#spanish')"><img src="" alt="">Español</a></span></div>
 				<div class="item"><span class="flag flag-en"><a href="#english" onClick="useLanguage('#english')"><img src="" alt="">English</a></span></div>
-				<div class="item" style="display:none;"><span class="flag flag-pt"><a href="#portuguese" onClick="useLanguage('#portuguese')"><img src="" alt="">Português</a></span></div>
+				<div class="item"><span class="flag flag-pt"><a href="#portuguese" onClick="useLanguage('#portuguese')"><img src="" alt="">Português</a></span></div>
 				<div class="item"><span class="flag flag-jp"><a href="#japanese" onClick="useLanguage('#japanese')"><img src="" alt="">日本語</a></span></div>
 				<div class="item" style="display:none;"><span class="flag flag-cn"><a href="#chinese" onClick="useLanguage('#chinese')"><img src="" alt="">中文</a></span></div>
 				<div class="item" style="display:none;"><span class="flag flag-al"><a href="#german" onClick="useLanguage('#german')"><img src="" alt="">Deutsche</a></span></div>
 				<div class="item"><span class="flag flag-tr"><a href="#turkish" onClick="useLanguage('#turkish')"><img src="" alt="">Türk</a></span></div>
 				<div class="item"><span class="flag flag-th"><a href="#thai" onClick="useLanguage('#thai')"><img src="" alt="">ประเทศไทย</a></span></div>
 				<div class="item" style="display:none;"><span class="flag flag-co"><a href="#korean" onClick="useLanguage('#korean')"><img src="" alt="">한국어</a></span></div>
+				<div class="item"><span class="flag flag-pt"><a href="#russian" onClick="useLanguage('#russian')"><img src="" alt="">русский</a></span></div>
+				<div class="item"><span class="flag flag-jp"><a href="#greek" onClick="useLanguage('#greek')"><img src="" alt="">Ελληνικά</a></span></div>
 			</div>
 		</div>
 	</div>
