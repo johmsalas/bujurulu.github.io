@@ -11,6 +11,65 @@
 		<link href="https://fonts.googleapis.com/css?family=Pacifico|Quicksand" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
     <link href="style/style.css" rel="stylesheet" type="text/css">
+
+		<script type="text/javascript">
+			var hash = window.location.hash;
+			var translation = {
+				'#japanese': {
+					'invitation': '”フランス語であなたにささやきの魔法を教',
+					'subscribe': 'えるテレビゲーム',
+					'subscribe_content': '言語の力を発見して、魔法をささやいてください',
+				},
+				'#portuguese': {
+					'invitation': '',
+					'subscribe': '',
+					'subscribe_content': '',
+				},
+				'#english': {
+					'invitation': 'A video game that teaches you the magic of whispers in French',
+					'subscribe': 'Subscribe',
+					'subscribe_content': 'Discover the power of the word and whisper the magic',
+				},
+				'#chinese': {
+					'invitation': '',
+					'subscribe': '',
+					'subscribe_content': '',
+				},
+				'#german': {
+					'invitation': '',
+					'subscribe': '',
+					'subscribe_content': '',
+				},
+				'#turkish': {
+					'invitation': 'Sana fisilti büyüsünü ögreten bir video oyunu',
+					'subscribe': 'abone ol',
+					'subscribe_content': 'Dünyanin gücünü kesfet ve sihiri fisilda',
+				},
+				'#thai': {
+					'invitation': 'เกมส์ที่จะสอนความมหัศจรรย์ของการออกเสียงในภาษาฝรั่งเศส',
+					'subscribe': 'กดติดตาม',
+					'subscribe_content': 'เผยพลังความมหัศจรรย์ของคำและการออกเสียง',
+				},
+				'#spanish': {
+					'invitation': 'Un video juego que te enseña la magia de los susurros en francés',
+					'subscribe': 'Suscribete',
+					'subscribe_content': 'Descubre el poder de la palabra y murmura la magia',
+				},
+				'#korean': {
+					'invitation': '',
+					'subscribe': '',
+					'subscribe_content': '',
+				},
+			};
+			function useLanguage(lang) {
+				if ( typeof translation[lang] != "undefined" ) {
+					document.getElementById("invitation").innerHTML = translation[lang].invitation;
+					document.getElementById("subscribe").innerHTML = translation[lang].subscribe;
+					document.getElementById("subscribe_content").innerHTML = translation[lang].subscribe_content;
+				}				
+			}
+		</script>
+
   </head>
 <body >
 
@@ -19,15 +78,15 @@
 	<div class="container ">
 		<div class="row">
 			<div class="item-container">
-				<div class="item"><span class="flag flag-en"><a href=""><img src="" alt="">English</a></span></div>
-				<div class="item"><span class="flag flag-pt"><a href=""><img src="" alt="">Portuguese</a></span></div>
-				<div class="item"><span class="flag flag-jp"><a href=""><img src="" alt="">Japanese</a></span></div>
-				<div class="item"><span class="flag flag-cn"><a href=""><img src="" alt="">Cantonese</a></span></div>
-				<div class="item"><span class="flag flag-md"><a href=""><img src="" alt="">Mandarin</a></span></div>
-				<div class="item"><span class="flag flag-al"><a href=""><img src="" alt="">Aleman</a></span></div>
-				<div class="item"><span class="flag flag-tr"><a href=""><img src="" alt="">Turco</a></span></div>
-				<div class="item"><span class="flag flag-th"><a href=""><img src="" alt="">Tahiland</a></span></div>
-				<div class="item"><span class="flag flag-co"><a href=""><img src="" alt="">Coreano</a></span></div>
+				<div class="item"><span class="flag flag-co"><a href="#spanish" onClick="useLanguage('#spanish')"><img src="" alt="">Español</a></span></div>
+				<div class="item"><span class="flag flag-en"><a href="#english" onClick="useLanguage('#english')"><img src="" alt="">English</a></span></div>
+				<div class="item" style="display:none;"><span class="flag flag-pt"><a href="#portuguese" onClick="useLanguage('#portuguese')"><img src="" alt="">Português</a></span></div>
+				<div class="item"><span class="flag flag-jp"><a href="#japanese" onClick="useLanguage('#japanese')"><img src="" alt="">日本語</a></span></div>
+				<div class="item" style="display:none;"><span class="flag flag-cn"><a href="#chinese" onClick="useLanguage('#chinese')"><img src="" alt="">中文</a></span></div>
+				<div class="item" style="display:none;"><span class="flag flag-al"><a href="#german" onClick="useLanguage('#german')"><img src="" alt="">Deutsche</a></span></div>
+				<div class="item"><span class="flag flag-tr"><a href="#turkish" onClick="useLanguage('#turkish')"><img src="" alt="">Türk</a></span></div>
+				<div class="item"><span class="flag flag-th"><a href="#thai" onClick="useLanguage('#thai')"><img src="" alt="">ประเทศไทย</a></span></div>
+				<div class="item" style="display:none;"><span class="flag flag-co"><a href="#korean" onClick="useLanguage('#korean')"><img src="" alt="">한국어</a></span></div>
 			</div>
 		</div>
 	</div>
@@ -39,7 +98,7 @@
 			<div class="col-sm-12 ">
 				<div class="contenido">
 					<img src="img/Logotipo2.jpg" alt="">
-					<p>Un videojuego que te enseña la magia de los susurros en francés</p>
+					<p id="invitation">Un videojuego que te enseña la magia de los susurros en francés</p>
 				</div>
 			</div>
 		</div>
@@ -51,8 +110,8 @@
 		<div class="row">
 			<div class="col-sm-12 ">
 				<div class="contenido">
-					<h2>Suscribete! </h2>
-					<p>Descubre el poder de la palabra y murmura la magia </p>
+					<h2 id="subscribe">Suscribete! </h2>
+					<p id="subscribe_content">Descubre el poder de la palabra y murmura la magia </p>
 					<div class="">
 						<div class="cognito">
 							<script src="https://services.cognitoforms.com/s/w96yz59nfUC__Ci18hjQRQ"></script>
@@ -71,12 +130,15 @@
 			<div class="col-sm-12 ">
 				<div class="contenido">
 					<img src="http://cumbredelfrances.co/wp-content/uploads/2017/02/footer_logos_org.png" alt="">
-
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
+
+<script type="text/javascript">
+	useLanguage(hash);
+</script>
 
 
 
